@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <Cabecalho/>
+    <Interativo/>
   </div>
 </template>
 
 <script>
-import Cabecalho from "./components/Cabecalho.vue"
+import Cabecalho from "./components/header/Cabecalho.vue"
+import Interativo from "./components/interativo/Interativo.vue"
 
 export default {
   components: {
-    Cabecalho
+    Cabecalho,
+    Interativo
   }
 }
 </script>

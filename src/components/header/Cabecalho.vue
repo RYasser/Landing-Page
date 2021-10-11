@@ -26,7 +26,7 @@ export default {
   .cabecalho {
     background-image: 
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url('../assets/images/desktop/image-hero.jpg');
+      url('../../assets/images/desktop/image-hero.jpg');
     opacity: 1;
     height: 600px; 
   }

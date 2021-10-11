@@ -1,6 +1,6 @@
 <template>
   <div class="containerMenu">
-    <img class="logo" src="../assets/images/logo.svg">
+    <img class="logo" src="../../assets/images/logo.svg">
     
     <!-- PERCORRENDO ARRAY DE ITENS PARA MOSTRAR NO MENU -->
     <nav class="menu">
