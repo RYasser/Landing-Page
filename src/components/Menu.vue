@@ -1,0 +1,53 @@
+<template>
+  <div class="containerMenu">
+    <img class="logo" src="../assets/images/logo.svg">
+    
+    <!-- PERCORRENDO ARRAY DE ITENS PARA MOSTRAR NO MENU -->
+    <nav class="menu">
+      <div class="itemMenu" v-for="item in itensMenu">
+        {{ item }}
+      </div>
+    </nav>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      // ITENS DO MENU
+      itensMenu: [
+      'About',
+      'Careers',
+      'Events',
+      'Products',
+      'Support'
+    ]
+    }
+  }
+}
+</script>
+
+<style scoped>
+  .logo {
+    float: left;
+  }
+
+  .menu {
+    float: right;
+    margin-right: 75px;
+    display: flex;
+    font-size: 15px;
+  }
+
+  .itemMenu {
+    color: white;
+    margin: 15px;
+    height: 50px;
+    width: 100%;
+  }
+
+  .itemMenu:hover {
+    cursor: pointer;
+  }
+</style>
