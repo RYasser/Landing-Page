@@ -2,17 +2,20 @@
   <div id="app">
     <Cabecalho/>
     <Interativo/>
+    <Criacoes/>
   </div>
 </template>
 
 <script>
 import Cabecalho from "./components/header/Cabecalho.vue"
 import Interativo from "./components/interativo/Interativo.vue"
+import Criacoes from "./components/criacoes/Criacoes.vue"
 
 export default {
   components: {
     Cabecalho,
-    Interativo
+    Interativo,
+    Criacoes
   }
 }
 </script>

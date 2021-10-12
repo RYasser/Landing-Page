@@ -19,7 +19,7 @@ export default {
 <style scoped>
   .containerInterativo {
     padding: 9rem;
-    width: 900px;
+    width: 78em;
     position: relative;
   }
 </style>
