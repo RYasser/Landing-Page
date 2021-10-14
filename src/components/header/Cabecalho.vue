@@ -1,6 +1,7 @@
 <template>
   <header class="cabecalho">
     <div class="containerCabecalho">
+      <img class="logo" src="../../assets/images/logo.svg">
       <Menu/>
       <!--TEXTO DA CAIXA DA TÍTULO PRINCIPAL DO CABEÇALHO-->
       <TituloPrincipal class="tituloPrincipal">
@@ -29,6 +30,10 @@ export default {
       url('../../assets/images/desktop/image-hero.jpg');
     opacity: 1;
     height: 600px; 
+  }
+
+  .logo {
+    float: left;
   }
 
   .containerCabecalho {

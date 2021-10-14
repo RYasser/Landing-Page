@@ -1,6 +1,6 @@
 <template>
   <div class="containerMenu">
-    <img class="logo" src="../../assets/images/logo.svg">
+    
     
     <!-- PERCORRENDO ARRAY DE ITENS PARA MOSTRAR NO MENU -->
     <nav class="menu">
@@ -43,7 +43,7 @@ export default {
   .itemMenu {
     color: white;
     margin: 15px;
-    height: 50px;
+    height: 30px;
     width: 100%;
   }
 

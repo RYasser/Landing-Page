@@ -3,6 +3,7 @@
     <Cabecalho/>
     <Interativo/>
     <Criacoes/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Cabecalho from "./components/header/Cabecalho.vue"
 import Interativo from "./components/interativo/Interativo.vue"
 import Criacoes from "./components/criacoes/Criacoes.vue"
+import Footer from "./components/footer/Footer.vue"
 
 export default {
   components: {
     Cabecalho,
     Interativo,
-    Criacoes
+    Criacoes,
+    Footer
   }
 }
 </script>
