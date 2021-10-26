@@ -2,7 +2,8 @@
   <header class="cabecalho">
     <div class="containerCabecalho">
       <img class="logo" src="../../assets/images/logo.svg">
-      <Menu/>
+      <Menu class="menu"/>
+      <img class="toggle" src="../../assets/images/icon-hamburger.svg">
       <!--TEXTO DA CAIXA DA TÍTULO PRINCIPAL DO CABEÇALHO-->
       <TituloPrincipal class="tituloPrincipal">
         <h1 class="textoTitulo">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
@@ -29,7 +30,12 @@ export default {
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../../assets/images/desktop/image-hero.jpg');
     opacity: 1;
-    height: 600px; 
+    height: 40rem;
+  }
+
+  .toggle {
+    display: none;
+    float: right;
   }
 
   .logo {
@@ -42,5 +48,35 @@ export default {
 
   .tituloPrincipal {
     margin-top: 160px;
+  }
+
+  @media (max-width: 375px) {
+    .cabecalho {
+      background-image: 
+        url('../../assets/images/mobile/image-hero.jpg');
+      height: 42rem;
+      background-size: 380px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .toggle {
+      display: block;
+    }
+
+    .containerCabecalho {
+      padding: 35px 25px;
+    }
+
+    .tituloPrincipal {
+      width: 100%;
+      margin-top: 14rem;
+    }
+
+    .logo {
+      width: 12em;
+    }
   }
 </style>

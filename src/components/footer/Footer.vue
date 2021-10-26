@@ -1,9 +1,14 @@
 <template>
   <footer class="footer">
     <div class="containerFooter">
+      <!-- LOGO -->
       <img class="logo" src="../../assets/images/logo.svg">
+
+      <!-- MENU DA LANDINGPAGE -->
       <Menu class="menu"/>
+
       <div class="redesSociais">
+        <!-- ICONES DAS REDES SOCIAIS -->
         <img src="../../assets/images/icon-facebook.svg">
         <img src="../../assets/images/icon-twitter.svg">
         <img src="../../assets/images/icon-pinterest.svg">

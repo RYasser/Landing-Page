@@ -17,7 +17,7 @@ export default {
   .card {
     position: relative;
     margin-top: 3.5em;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .imgCard {

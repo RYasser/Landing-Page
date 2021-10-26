@@ -29,12 +29,18 @@ export default {
 
   html, body {
     margin: 0px;
-    width: 1440px;
     font-size: 15px;
+    width: 1440px;
     font-family: 'Alata', sans-serif;
   }
 
   * {
     box-sizing: border-box;
+  }
+
+  @media (max-width: 375px) {
+    html, body {
+      width: 375px;
+    }
   }
 </style>

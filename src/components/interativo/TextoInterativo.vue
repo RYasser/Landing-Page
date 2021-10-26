@@ -6,7 +6,6 @@
 
 <style scoped>
   .containerTextoInterativo {
-    padding: 4.5em 4.5em 0em 4.5em;
     color: black;
     width: 65%;
     background-color: white;
@@ -21,5 +20,11 @@
     font-family: Josefin Sans;
     line-height: 42px;
     color: hsl(0, 0%, 20%);
+  }
+
+  @media (max-width: 375px) {
+    br {
+      display: none;
+    }
   }
 </style>

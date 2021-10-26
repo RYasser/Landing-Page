@@ -11,7 +11,7 @@
 
       <!-- PERCORRE O ARRAY DE OBJETOS QUE CONTÉM TITULO E IMAGEM REFERENTE AO CARD -->
       <div class="containerCards">
-        <Card :urlImagem="card.imagem" v-for="(card, key) in cards" :key="">
+        <Card :urlImagem="card.imagem" v-for="(card, key) in cards" :key="key">
           <h3 class="tituloCard">{{ card.titulo }}</h3>
         </Card>
       </div>
@@ -86,5 +86,29 @@ export default {
     flex-wrap: wrap;
     height: auto;
     justify-content: space-between;
+  }
+
+  @media (max-width: 375px) {
+    .butaoVerTudo {
+      display: none;
+    }
+
+    .cabecalhoCriacoes {
+      position: static;
+    }
+
+    .containerCards {
+      flex-direction: column;
+    }
+
+    .containerCriacoes {
+      position: static;
+      width: 18em;
+      padding: 1.5em 4em 1.5em 4em;
+    }
+
+    .tituloSecao {
+      font-size: 2.2em;
+    }
   }
 </style>
