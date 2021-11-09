@@ -6,7 +6,7 @@
       <!-- CABEÇALHO DOS CARDS, ONDE CONTÉM O TÍTULO DA SEÇÃO E O BOTÃO SEE ALL -->
       <section class="cabecalhoCriacoes">
         <h2 class="tituloSecao">OUR CREATIONS</h2>
-        <button class="butaoVerTudo">SEE ALL</button>
+        <button class="botaoVerTudo botaoDesktop">SEE ALL</button>
       </section>
 
       <!-- PERCORRE O ARRAY DE OBJETOS QUE CONTÉM TITULO E IMAGEM REFERENTE AO CARD -->
@@ -16,6 +16,8 @@
         </Card>
       </div>
 
+      <!-- BOTÃO COM A CLASSE ESPECÍFICA PARA O DISPLAY MOBILE -->
+      <button class="botaoVerTudo botaoMobile">SEE ALL</button>
     </div>
   </div>
 </template>
@@ -61,7 +63,7 @@ export default {
     font-size: 2.8em;
   }
 
-  .butaoVerTudo {
+  .botaoVerTudo {
     position: relative;
     top: 1.9em;
     border: solid 1px hsl(0, 0%, 10%);
@@ -76,7 +78,15 @@ export default {
     font-weight: bold;
   }
 
-  .butaoVerTudo:hover {
+  .botaoDesktop {
+    display: block;
+  }
+
+  .botaoMobile {
+    display: none;
+  }
+
+  .botaoVerTudo:hover {
     background-color: hsl(0, 0%, 95%);
     cursor: pointer;
   }
@@ -89,7 +99,12 @@ export default {
   }
 
   @media (max-width: 375px) {
-    .butaoVerTudo {
+    .botaoMobile {
+      display: block;
+      left: 4rem;
+    }
+
+    .botaoDesktop {
       display: none;
     }
 
@@ -99,12 +114,14 @@ export default {
 
     .containerCards {
       flex-direction: column;
+      overflow: hidden;
+      width: 19rem;
     }
 
     .containerCriacoes {
       position: static;
       width: 18em;
-      padding: 1.5em 4em 1.5em 4em;
+      padding: 0em 4em 0em 4em;
     }
 
     .tituloSecao {

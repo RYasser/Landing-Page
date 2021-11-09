@@ -1,6 +1,7 @@
 <template>
   <div class="card">
-    <img class="imgCard" :src="require(`../../assets/images/desktop/${urlImagem}.jpg`)">
+    <img v-if="tamanhoTela > 375" class="imgCard" :src="require(`../../assets/images/desktop/${urlImagem}.jpg`)">
+    <img v-else class="imgCard imgMobile" :src="require(`../../assets/images/mobile/${urlImagem}.jpg`)">
     <slot/>
   </div>
 </template>
@@ -9,6 +10,11 @@
 export default {
   props: {
     urlImagem: String,
+  },
+  data() {
+    return {
+      tamanhoTela: window.screen.width
+    }
   }
 }
 </script>
@@ -32,4 +38,18 @@ export default {
     top: 9.6em;
     left: 1.4em;
   }
+
+  @media (max-width: 375px) {
+    .tituloCard {
+      top: 3em;
+      left: 0.6em;
+      font-size: 1.2em;
+    }
+
+    .imgMobile {
+      width: 100%;
+
+    }
+  }
+  
 </style>

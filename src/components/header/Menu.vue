@@ -50,4 +50,20 @@ export default {
   .itemMenu:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 375px) {
+    .containerMenu {
+      position: relative;
+      left: 40%;
+    }
+
+    .menu {
+      flex-direction: column;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    .itemMenu {
+      margin-top: 0%;
+    }
+  }
 </style>

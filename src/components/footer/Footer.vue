@@ -9,10 +9,10 @@
 
       <div class="redesSociais">
         <!-- ICONES DAS REDES SOCIAIS -->
-        <img src="../../assets/images/icon-facebook.svg">
-        <img src="../../assets/images/icon-twitter.svg">
-        <img src="../../assets/images/icon-pinterest.svg">
-        <img src="../../assets/images/icon-instagram.svg">
+        <img class="iconeRedes" src="../../assets/images/icon-facebook.svg">
+        <img class="iconeRedes" src="../../assets/images/icon-twitter.svg">
+        <img class="iconeRedes" src="../../assets/images/icon-pinterest.svg">
+        <img class="iconeRedes" src="../../assets/images/icon-instagram.svg">
       </div>
       <p class="direitosReservados">© 2021 Loopstudios. All rights reserved.</p>
     </div>
@@ -70,5 +70,29 @@ export default {
     display: flex;
     justify-content: space-between;
     max-width: 10rem;
+  }
+
+  @media (max-width: 375px) {
+    .containerFooter {
+      height: 40%;
+      display: flex;
+      width: 30em;
+      flex-direction: column;
+    }
+
+    .iconeRedes {
+      margin-left: 5%;
+    }
+
+    .redesSociais {
+      width: 50rem;
+      left: 10%;
+    }
+
+    .direitosReservados {
+      width: 50rem;
+      left: -50%;
+      margin-top: 2rem;
+    }
   }
 </style>
