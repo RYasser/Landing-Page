@@ -14,12 +14,13 @@ export default {
     Conteudo
   }
 }
+//78
 </script>
 
 <style scoped>
   .containerInterativo {
     padding: 9rem;
-    width: 78em;
+    width: 60em;
     position: relative;
   }
 

@@ -3,7 +3,7 @@
     <div class="containerCabecalho">
       <img class="logo" src="../../assets/images/logo.svg">
       <Menu class="menu"/>
-      <img class="toggle" src="../../assets/images/icon-hamburger.svg">
+      <img @click="ativarMenuMobile" class="toggle" src="../../assets/images/icon-hamburger.svg">
       <!--TEXTO DA CAIXA DA TÍTULO PRINCIPAL DO CABEÇALHO-->
       <TituloPrincipal class="tituloPrincipal">
         <h1 class="textoTitulo">IMMERSIVE<br>EXPERIENCES<br>THAT DELIVER</h1>
@@ -20,6 +20,11 @@ export default {
   components: {
     TituloPrincipal,
     Menu
+  },
+  methods: {
+    ativarMenuMobile() {
+      this.$emit('ativarMenuMobile', false)
+    }
   }
 }
 </script>
@@ -30,7 +35,12 @@ export default {
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url('../../assets/images/desktop/image-hero.jpg');
     opacity: 1;
-    height: 40rem;
+    height: auto;
+  }
+
+  .menu {
+    float: right;
+    font-size: 15px;
   }
 
   .toggle {
@@ -43,7 +53,7 @@ export default {
   }
 
   .containerCabecalho {
-    padding: 70px 120px;
+    padding: 4rem 6rem;
   }
 
   .tituloPrincipal {

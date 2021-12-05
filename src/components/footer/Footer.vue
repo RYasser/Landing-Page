@@ -39,7 +39,7 @@ export default {
     width: auto;
     height: 11em;
     background-color: black;
-    padding: 3em 15em 3em 8.5em;
+    padding: 3em 6.8em 3em 6.5em;
     overflow: hidden;
   }
 
@@ -50,9 +50,11 @@ export default {
   }
 
   .menu {
+    float: right;
     position: relative;
-    right: 49.5%;
+    right: 63%;
     top: 45%;
+    font-size: 15px;
   }
 
   .direitosReservados {
@@ -73,10 +75,20 @@ export default {
   }
 
   @media (max-width: 375px) {
+    .menu  {
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      position: relative;
+      left: 36%;
+    }
+
+    .logo {
+      left: 2em;
+    }
+
     .containerFooter {
       height: 40%;
       display: flex;
-      width: 30em;
+      width: 100%;
       flex-direction: column;
     }
 
@@ -86,12 +98,12 @@ export default {
 
     .redesSociais {
       width: 50rem;
-      left: 10%;
+      left: 2rem;
     }
 
     .direitosReservados {
       width: 50rem;
-      left: -50%;
+      left: -300%;
       margin-top: 2rem;
     }
   }

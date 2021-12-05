@@ -47,7 +47,7 @@ export default {
 
   .containerCriacoes {
     position: relative;
-    left: 9em;
+    left: 6.5em;
     width: 72em;
     height: auto;
     color: hsl(0, 0%, 20%);
@@ -101,7 +101,7 @@ export default {
   @media (max-width: 375px) {
     .botaoMobile {
       display: block;
-      left: 4rem;
+      left: 5.5rem;
     }
 
     .botaoDesktop {
@@ -121,7 +121,7 @@ export default {
     .containerCriacoes {
       position: static;
       width: 18em;
-      padding: 0em 4em 0em 4em;
+      padding: 0em 3em 0em 3em;
     }
 
     .tituloSecao {

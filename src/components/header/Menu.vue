@@ -34,10 +34,7 @@ export default {
   }
 
   .menu {
-    float: right;
-    margin-right: 75px;
     display: flex;
-    font-size: 15px;
   }
 
   .itemMenu {
@@ -52,18 +49,14 @@ export default {
   }
 
   @media (max-width: 375px) {
-    .containerMenu {
-      position: relative;
-      left: 40%;
-    }
-
     .menu {
       flex-direction: column;
-      margin: 1.5rem 0rem 1.5rem 0rem;
+      width: 50%;
     }
 
     .itemMenu {
       margin-top: 0%;
+      width: 30%;
     }
   }
 </style>
