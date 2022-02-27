@@ -1,6 +1,6 @@
 # loopstudios
 Projeto desafio pela www.frontendmentor.io
-Projeto hospedado: landing-page-loopstudios.web.app
+Projeto hospedado: loopstudios-yasser.web.app
 
 ## Project setup
 ```
