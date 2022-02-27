@@ -22,7 +22,7 @@
     margin-left: 15px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     .containerTituloPrincipal {
       font-size: 1.10rem;
       letter-spacing: 4px;

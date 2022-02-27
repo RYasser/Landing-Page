@@ -4,7 +4,7 @@
     
     <!-- PERCORRENDO ARRAY DE ITENS PARA MOSTRAR NO MENU -->
     <nav class="menu">
-      <div class="itemMenu" v-for="item in itensMenu">
+      <div class="itemMenu" :key="{item}" v-for="item in itensMenu">
         {{ item }}
       </div>
     </nav>
@@ -48,7 +48,7 @@ export default {
     cursor: pointer;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 460px) {
     .menu {
       flex-direction: column;
       width: 50%;

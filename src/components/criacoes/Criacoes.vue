@@ -98,10 +98,10 @@ export default {
     justify-content: space-between;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     .botaoMobile {
       display: block;
-      left: 5.5rem;
+      left: 3.5rem;
     }
 
     .botaoDesktop {
@@ -121,7 +121,7 @@ export default {
     .containerCriacoes {
       position: static;
       width: 18em;
-      padding: 0em 3em 0em 3em;
+      padding: 0em 0em 0em 5em;
     }
 
     .tituloSecao {

@@ -22,7 +22,7 @@
     color: hsl(0, 0%, 20%);
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     br {
       display: none;
     }

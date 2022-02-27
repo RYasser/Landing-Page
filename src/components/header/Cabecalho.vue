@@ -60,12 +60,12 @@ export default {
     margin-top: 160px;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     .cabecalho {
       background-image: 
         url('../../assets/images/mobile/image-hero.jpg');
       height: 42rem;
-      background-size: 380px;
+      background-size: 100%;
     }
 
     .menu {

@@ -64,9 +64,8 @@ export default {
     width: inherit;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     html, body {
-      width: 375px;
       height: auto;
     }
   }

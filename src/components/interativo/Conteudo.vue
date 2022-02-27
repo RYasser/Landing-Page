@@ -36,7 +36,7 @@ export default {
     font-size: 2.8em;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     .containerConteudo {
       width: 22em;
     }

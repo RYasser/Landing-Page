@@ -74,7 +74,7 @@ export default {
     max-width: 10rem;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 460px) {
     .menu  {
       margin: 1.5rem 0rem 1.5rem 0rem;
       position: relative;

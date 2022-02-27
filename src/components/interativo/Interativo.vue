@@ -24,9 +24,9 @@ export default {
     position: relative;
   }
 
-  @media (max-width: 375px) {
+  @media (max-width: 660px) {
     .containerInterativo {
-      padding: 6em 1.5em 6em 1.5em;
+      padding: 6em 0em 6em 2.5em;
       width: 18em;
     }
   }
