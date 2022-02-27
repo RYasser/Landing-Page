@@ -1,6 +1,8 @@
 # loopstudios
 Projeto desafio pela www.frontendmentor.io
 
+Projeto hospedado: landing-page-loopstudios.web.app
+
 ## Project setup
 ```
 npm install
